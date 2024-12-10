@@ -150,14 +150,23 @@ h3 {
     justify-content: center;
 }
 .contact {
-    padding: 150px 300px;
-}
-.contact-content {
-    background-color: rgb(9, 1, 31);
-    text-align: center;
     padding: 50px;
-    border-radius: 50px;
 }
+.contact-content { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; /* Centra los elementos horizontalmente */ 
+    justify-content: center; /* Centra los elementos verticalmente */ 
+    background-color: rgb(9, 1, 31); 
+    text-align: center; 
+    padding: 50px; 
+    border-radius: 50px; 
+} 
+.contact-content a { 
+    display: inline-block; 
+    margin-top: 20px; 
+    text-align: center; /* Centra el texto dentro del enlace */
+} 
 .footer {
     display: flex;
     justify-content: space-between;
@@ -236,8 +245,20 @@ h3 {
     .product-1 img {
         width: 100%;
     }
-    .contact {
-        flex-direction: column;
+    .contact-content { 
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; /* Centra los elementos horizontalmente */ 
+        justify-content: center; /* Centra los elementos verticalmente */ 
+        text-align: center; 
+        padding: 50px; 
+        border-radius: 50px; 
+    } 
+    .contact-content a { 
+        display: inline-block; 
+        margin-top: 20px; 
+        text-align: center; /* Centra el texto dentro del enlace */ 
+        box-sizing: border-box; /* Incluye el padding y borde en el ancho total */ 
     }
     .footer {
         flex-direction: column;
