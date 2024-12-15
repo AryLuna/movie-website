@@ -120,6 +120,9 @@ h2 {
 .popular-content img {
     width: 150px;
 }
+.popular-content img:hover {
+    transform: scale(1.2);
+}
 .product-content{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
